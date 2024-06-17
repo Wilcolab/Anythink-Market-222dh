@@ -38,7 +38,7 @@ async function seedDB () {
         createdItem.comments = commentIds;
         await createdItem.save();
     }
-}
+}}
 
 seedDB()
 .then(() => {
