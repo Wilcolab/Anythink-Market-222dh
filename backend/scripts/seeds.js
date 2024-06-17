@@ -10,7 +10,7 @@ const Comment = mongoose.model("Commet");
 async function seedDB () {
     for (let i = 0; i < 100; i++){
     // Add User
-    const user = { username: = `users${i}`, email: `users{i}@gmail.com`};
+    const user = { username: `users${i}`, email: `users{i}@gmail.com`};
     const options = { upsert: true, new:true};
     const createdUser = await User.findOneAndUpdate(user, {}, opitions);
 
