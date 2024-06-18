@@ -2,7 +2,8 @@
 const mongoose = require("mongoose");
 const connection = process.env.MONGODB_URI;
 mongoose.connect(connection);
-equire("./models/User");
+
+require("./models/User");
 require("./models/Item");
 require("./models/Comment");
 
