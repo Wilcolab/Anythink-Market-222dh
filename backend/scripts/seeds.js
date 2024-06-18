@@ -5,7 +5,7 @@ mongoose.connect(connection);
 
 const User = mongoose.model("User");
 const Item = mongoose.model("Item");
-const Comment = mongoose.model("Commet");
+const Comment = mongoose.model("Comment");
 
 async function seedDB () {
     for (let i = 0; i < 100; i++){
