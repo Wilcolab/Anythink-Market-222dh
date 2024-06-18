@@ -2,10 +2,14 @@
 const mongoose = require("mongoose");
 const connection = process.env.MONGODB_URI;
 mongoose.connect(connection);
+equire("./models/User");
+require("./models/Item");
+require("./models/Comment");
 
-const User = mongoose.model("User");
-const Item = mongoose.model("Item");
-const Comment = mongoose.model("Comment");
+// const User = mongoose.model("User");
+// const Item = mongoose.model("Item");
+// const Comment = mongoose.model("Comment");
+
 
 async function seedDB () {
     for (let i = 0; i < 100; i++){
